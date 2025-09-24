@@ -1,0 +1,19 @@
+INSERT INTO Student (name, gender, dob, phone, email, course)
+VALUES 
+('Sneha Singh', 'Female', '2001-06-05', '9988776655', NULL, 'MBA'),
+('Ravi Kumar', 'Male', '2000-11-10', '9123456789', NULL, 'BTech'),
+('Priya Sharma', 'Female', '2003-02-20', '9876501234', 'priya@example.com', 'MBA');
+
+INSERT INTO Student (name, gender, dob, phone, email, course)
+VALUES 
+('Sneha Singh', 'Female', '2001-06-05', '9988776655', 'Not Provided', 'MBA'),
+('Ravi Kumar', 'Male', '2000-11-10', '9123456789', 'Not Provided', 'BTech'),
+('Priya Sharma', 'Female', '2003-02-20', '9876501234', 'priya@example.com', 'MBA');
+
+UPDATE Student
+SET email = 'sneha@example.com'
+WHERE name = 'Sneha Singh';
+DELETE FROM Student
+WHERE name = 'Ravi Kumar';
+UPDATE Student SET email='sneha@example.com' WHERE name='Sneha Singh';
+DELETE FROM Student WHERE name='Ravi Kumar';
